@@ -1,0 +1,108 @@
+<html>
+<head>
+	<style>
+	body
+{
+margin:0px;
+background-color:red;
+}
+.bodydiv
+{
+	width:100%;
+	height:100%;
+	background-color:#f0f0f0;
+	float:left;
+}
+	.bodyinnerdiv
+	{
+		width:90%;
+		height:500px;
+		margin-left:5%;
+		margin-top:100px;
+		float:left;
+	}
+		.bodycenterdiv
+		{
+			width:400px;
+			height:500px;
+			margin:0px auto;
+		}
+			.headerdiv
+			{
+				width:100%;
+				height:50px;
+				background-color:#0095FF;
+				border-radius:5px;
+				margin-bottom:30px;
+				float:left;
+			}
+				.headerdivtext
+				{
+					font-size:20px;
+					font-weight:700;
+					color:#FFF;
+					text-align:center;
+					margin-top:12px;
+					font-family: 'Open Sans', 'Arial', Helvetica, sans-serif;
+					
+				}
+			.fullwidth
+			{
+				width:100%;
+				height:60px;
+				float:left;
+			}
+				.fullwidthdetailtext
+				{
+					width:99%;
+					font-size:15px;
+					font-weight:700;
+					color:#333;
+					text-align:left;
+					margin-top:1px;
+					margin-bottom:7px;
+					font-family: 'Open Sans', 'Arial', Helvetica, sans-serif;
+					float:left;
+				}
+			.submitbtn
+			{
+				width:130px;
+				height:40px;
+				border-radius:4px;
+				border:1px solid #0095FF;
+				background-color:#0095FF;
+				margin-left:1%;
+				margin-top:20px;
+				font-size:17px;
+				font-weight:700;
+				color:#FFF;
+				cursor:pointer;
+				font-family: 'Open Sans', 'Arial', Helvetica, sans-serif;
+				float:left;
+			}
+	</style>
+</head>
+<body>
+<div class='bodydiv'>
+	<div class='bodyinnerdiv'>
+		<div class='bodycenterdiv'>
+			<div class='bodycenterdiv'>
+				<div class='headerdiv'>
+					<p class='headerdivtext'> Upload Photo </p>
+				</div>
+				<form method="POST" action="/upload-profile-pic" enctype="multipart/form-data">
+					<div class='fullwidth'>
+						<p class='fullwidthdetailtext'>Select your profile picture:</p>
+						<input type="file" name="profile_pic" />
+					</div>
+					<div>
+						<input type="submit" name="btn_upload_profile_pic" class='submitbtn' value="Upload" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
